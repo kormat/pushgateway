@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec /usr/lib/pushgateway "$@" 2>&1 | logger -p local7.info -t pushgateway
